@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import HomePage from "@/pages_content/home"
+import HomePage from "@/pages_content/Home"
 import axios from 'axios'
 import { BASE_URL } from '@/constants'
 
