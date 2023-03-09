@@ -2,15 +2,17 @@ import {FaSearch} from "react-icons/fa"
 import {AiOutlineShoppingCart} from "react-icons/ai"
 import { useRouter } from 'next/router';
 import Link from "next/link";
+import Image from "next/image";
 const Header = () => {
 
     const { asPath } = useRouter();
 
     return (
-        <header className={`flex-shirnk-0 px-4 py-5 ${asPath === "/" ? "bg-white shadow-lg fixed w-full top-0 left-0 z-10" :"bg-white"}`}>
+        <>
+        <header className={`flex-shirnk-0 px-4 py-2 ${asPath === "/" ? "bg-white shadow-lg fixed w-full top-0 left-0 z-10" :"bg-white"}`}>
             <div className="max-w-[1600px] w-10/12 mx-auto flex-shrink-0 flex space-x-5">
                 <a href="#" className='text-2xl font-bold'>
-                    PRO WEARS
+                    <Image height={70} width={70} src="/images/pro-wears.svg" className=""/>
                 </a>
                 <div className="flex-grow flex items-center space-x-5 justify-around">
                     <div className="flex items-center space-x-5">
@@ -37,6 +39,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
+        </>
     )
 }
 

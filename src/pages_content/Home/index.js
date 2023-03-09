@@ -2,10 +2,10 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Shop from "./Shop";
+import FirstSlide from './Slides/FirstSlide';
+import SecondSlide from './Slides/SecondSlide';
 
 const Home = ({ data, description, error, shop }) => {
-    console.log(shop)
-    console.log(data)
     if (error) {
         return (
             <>
@@ -24,12 +24,18 @@ const Home = ({ data, description, error, shop }) => {
                 onSwiper={(swiper) => console.log(swiper)}
                 className=""
             >
-
-                {
+                <SwiperSlide className='min-h-[100vh]'>
+                    <FirstSlide/>
+                </SwiperSlide>
+                <SwiperSlide className='min-h-[100vh]'>
+                    <SecondSlide/>
+                </SwiperSlide>
+                {/* {
                     data.map((item, index) => (
                         <SwiperSlide key={index} style={{
                             backgroundImage: `url(${item.background_image})`
                         }} className='min-h-[90vh] w-full flex items-center bg-center bg-cover bg-opacity-80 bg-black' >
+                            
                             <div className="w-10/12 max-w-[1600px] mx-auto h-auto pt-[200px]">
                                 <h2 className="text-7xl text-white font-bold">
                                         {item.title}
@@ -37,7 +43,7 @@ const Home = ({ data, description, error, shop }) => {
                             </div>
                         </SwiperSlide>
                     ))
-                }
+                } */}
             </Swiper>
             <div className='py-4 w-10/12 mx-auto max-w-[1600px]'>
                 <div className="flex items-center justify-center">

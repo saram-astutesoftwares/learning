@@ -5,3 +5,19 @@
 .swiper-wrapper{
     @apply h-full !important
 }
+
+.text-primary-shadow{
+    text-shadow: 10px 10px 10px #EBD25C;
+}
+
+.btn{
+    z-index: 1;
+    @apply relative flex items-center space-x-4 py-2 px-4 border-2 transition-all hover:shadow-xl text-base font-bold hover:tracking-[3px]
+}
+.btn-black{
+    @apply border-black
+}
+.btn-white{
+    z-index: 1;
+    @apply border-white text-white
+}
