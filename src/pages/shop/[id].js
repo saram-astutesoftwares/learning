@@ -1,7 +1,7 @@
 import { BASE_URL } from '@/constants'
 import axios from 'axios'
 import React from 'react'
-
+import Product from '@/pages_content/Product'
 export const getServerSideProps = async (context) => {
     console.log(BASE_URL+"api/product/listing/"+context.params.id)
     try{
@@ -28,7 +28,7 @@ export const getServerSideProps = async (context) => {
 
 const ProductDetail = ({data}) => {
   return (
-    <div>ProductDetail</div>
+    <Product/>
   )
 }
 

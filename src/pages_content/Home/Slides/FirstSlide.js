@@ -8,8 +8,8 @@ import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse
 const FirstSlide = () => {
     return (
         <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} className="bg-white min-h-[100vh] pt-[80px] flex items-center justify-center">
-            <div className="w-10/12 mx-auto max-w-[1600px] flex justify-center items-center relative">
-                 <MouseParallaxChild factorX={0.1} factorY={0.3} className="w-6/12">   
+            <div className="w-10/12 mx-auto max-w-[1600px] lg:flex justify-center items-center relative">
+                 <MouseParallaxChild factorX={0.1} factorY={0.3} className="lg:w-6/12">   
                 <div>
                     <motion.h1
                         initial={{
@@ -21,7 +21,7 @@ const FirstSlide = () => {
                             y: "0%",
                             opacity: 1
                         }}
-                    className="text-[120px] font-bold">
+                    className="text-7xl lg:text-[120px] font-bold">
                         Sneaker
                     </motion.h1>
                 <motion.span
@@ -35,7 +35,7 @@ const FirstSlide = () => {
                     opacity: 1
                 }}
                 transition={{ delay: 0.2 }}
-                className="-mt-9 block text-2xl font-bold">
+                className=" block text-2xl font-bold">
                     NEW CONCEPT FOR SUMMER
                 </motion.span>
                 <motion.p
@@ -70,7 +70,7 @@ const FirstSlide = () => {
                 </div>
                 </MouseParallaxChild>   
 
-                <MouseParallaxChild factorX={0.1} factorY={0.3} className="w-6/12">
+                <MouseParallaxChild factorX={0.1} factorY={0.3} className="lg:w-6/12">
                     <motion.div
                     initial={{
                         y: "50%",
@@ -84,8 +84,8 @@ const FirstSlide = () => {
                     transition={{
                         delay:0.5
                     }}
-                    className="div">
-                        <Image alt="pro wears sneaker" src="/images/shoe.webp" height={1000} width={1000} className="w-full"/>
+                    className="w-full">
+                        <Image alt="pro wears sneaker" src="/images/shoe.webp" height={1000} width={1000} className="mx-auto w-full"/>
 
                     </motion.div>
                 </MouseParallaxChild>
