@@ -1,31 +1,96 @@
 import React from 'react'
-import { SwiperSlide } from 'swiper/react'
 import Image from "next/image";
 import { BsArrowRight } from 'react-icons/bs';
-
+import "@/styles/Home.module.css"
+import {motion} from "framer-motion"
+import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 const FirstSlide = () => {
     return (
-        <div className="bg-gray-100 min-h-[100vh] pt-[80px] flex items-center justify-center">
+        <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} className="bg-white min-h-[100vh] pt-[80px] flex items-center justify-center">
             <div className="w-10/12 mx-auto max-w-[1600px] flex justify-center items-center relative">
+                 <MouseParallaxChild factorX={0.1} factorY={0.3} className="w-6/12">   
                 <div>
-                <h1 className=" text-[120px] font-bold">
-                    Sneaker
-                    <span className="-mt-9 block text-2xl font-bold">
-                        NEW CONCEPT FOR SUMMER
-                    </span>
-                </h1>
-                <p className="text-base mb-5">
+                    <motion.h1
+                        initial={{
+                            y: "50%",
+                            opacity: 0
+
+                        }}
+                        animate={{
+                            y: "0%",
+                            opacity: 1
+                        }}
+                    className="text-[120px] font-bold">
+                        Sneaker
+                    </motion.h1>
+                <motion.span
+                initial={{
+                    y: "50%",
+                    opacity: 0
+
+                }}
+                animate={{
+                    y: "0%",
+                    opacity: 1
+                }}
+                transition={{ delay: 0.2 }}
+                className="-mt-9 block text-2xl font-bold">
+                    NEW CONCEPT FOR SUMMER
+                </motion.span>
+                <motion.p
+                initial={{
+                    y: "50%",
+                    opacity: 0
+
+                }}
+                animate={{
+                    y: "0%",
+                    opacity: 1
+                }}
+                transition={{ delay: 0.3}}
+                className="text-base mb-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, assumenda.
-                </p>
-                <button className='btn btn-black'>
-                    BROWSE COLLECTION
+                </motion.p>
+                <motion.button
+                initial={{
+                    y: "50%",
+                    opacity: 0
+
+                }}
+                animate={{
+                    y: "0%",
+                    opacity: 1
+                }}
+                transition={{ delay: 0.4}}
+                className='btn-shadow hover:bg-white hover:text-black transition-all border-2 border-black bg-black text-white py-3 px-5 text-lg rounded-lg flex items-center font-medium space-x-2'>
+                    <p>Browse Collection</p>
                     <BsArrowRight className='text-3xl'/>
-                </button>
+                </motion.button>
                 </div>
-                <Image alt="pro wears sneaker" src="/images/shoe.webp" height={1000} width={1000} className="w-6/12"/>
+                </MouseParallaxChild>   
+
+                <MouseParallaxChild factorX={0.1} factorY={0.3} className="w-6/12">
+                    <motion.div
+                    initial={{
+                        y: "50%",
+                        opacity: 0
+
+                    }}
+                    animate={{
+                        y: "0%",
+                        opacity: 1
+                    }}
+                    transition={{
+                        delay:0.5
+                    }}
+                    className="div">
+                        <Image alt="pro wears sneaker" src="/images/shoe.webp" height={1000} width={1000} className="w-full"/>
+
+                    </motion.div>
+                </MouseParallaxChild>
             </div>
-        </div>
+        </MouseParallaxContainer>
 
     )
 }

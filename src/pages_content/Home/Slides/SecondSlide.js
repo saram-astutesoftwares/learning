@@ -6,7 +6,7 @@ import { BsArrowRight } from 'react-icons/bs';
 
 const FirstSlide = () => {
     return (
-        <div className="bg-gray-100 flex justify-center items-start">
+        <div className="bg-gray-100 flex justify-center items-start relative">
                 <div className="bg-black absolute bg-opacity-30 top-0 left-0 right-0 bottom-0">
 
                 </div>
