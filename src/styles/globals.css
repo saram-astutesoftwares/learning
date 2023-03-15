@@ -11,11 +11,10 @@
 }
 
 .btn{
-    z-index: 1;
-    @apply relative flex items-center space-x-4 py-2 px-4 border-2 transition-all hover:shadow-xl text-base font-bold hover:tracking-[3px]
+    @apply btn-shadow transition-all border-2  py-3 px-5 text-lg rounded-lg font-medium space-x-2
 }
-.btn-black{
-    @apply border-black
+.btn-primary{
+    @apply hover:bg-white hover:text-black border-black bg-black text-white
 }
 .btn-white{
     z-index: 1;
@@ -25,3 +24,27 @@
 .btn-shadow{
     box-shadow: 0 0 30px 0 rgba(0,0,0,0.3)
 }
+
+/* inputs */
+.input-text{
+    @apply w-full text-base outline-none transition-all origin-center focus:border-primary border-2 border-gray-300 py-2 px-4 rounded-md focus:outline-none
+  }
+  
+  .input-text-lg{
+    @apply font-semibold w-full text-base outline-none transition-all origin-center focus:border-primary border-2 border-gray-300 py-3 px-3 rounded-md focus:outline-none
+  }
+  
+  .input-text-sm{
+    @apply font-semibold w-full text-xs outline-none transition-all origin-center focus:border-primary border-[1px] border-gray-300 py-2 px-1 rounded-md focus:outline-none
+  }
+  
+  .input-text-active{
+    @apply border-green-500
+  }
+  .input-text-error{
+    @apply border-red-500
+  }
+  .input-text-error ~ label{
+    @apply text-red-500
+  }
+  /* inputs */

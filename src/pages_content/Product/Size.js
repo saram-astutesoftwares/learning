@@ -2,7 +2,7 @@ import React from 'react'
 
 const Size = () => {
   return (
-    <>
+    <div className='mb-5'>
         <span className="font-bold uppercase mb-2 block">
             Select Size
         </span>
@@ -12,7 +12,7 @@ const Size = () => {
             <Block value={"L"}/>
             <Block value={"XL"}/>
         </div>
-    </>
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@ const FirstSlide = () => {
     return (
         <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1} className="bg-white min-h-[100vh] pt-[80px] flex items-center justify-center">
             <div className="w-10/12 mx-auto max-w-[1600px] lg:flex justify-center items-center relative">
-                 <MouseParallaxChild factorX={0.1} factorY={0.3} className="lg:w-6/12">   
+                 <MouseParallaxChild factorX={0} factorY={0} className="lg:w-6/12">   
                 <div>
                     <motion.h1
                         initial={{
@@ -70,7 +70,7 @@ const FirstSlide = () => {
                 </div>
                 </MouseParallaxChild>   
 
-                <MouseParallaxChild factorX={0.1} factorY={0.3} className="lg:w-6/12">
+                <MouseParallaxChild factorX={0.4} factorY={0.8} className="lg:w-6/12">
                     <motion.div
                     initial={{
                         y: "50%",

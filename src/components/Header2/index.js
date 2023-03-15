@@ -1,11 +1,15 @@
 import { IoSearchOutline } from "react-icons/io5"
 import { BsBag } from "react-icons/bs"
+import { AiOutlineUser } from "react-icons/ai"
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import Image from "next/image";
+import { useClientUser } from "@/hooks/useClientUser";
 const Header = () => {
-
+    const user = useClientUser();
     const { asPath } = useRouter();
+
+    console.log(user, "THIS IS USER")
 
     return (
         <>
@@ -32,33 +36,18 @@ const Header = () => {
                         <button className="focus:outline-none">
                             <BsBag className="text-3xl"/>
                         </button>
-                        <button className="btn-shadow bg-black text-white py-3 px-5 text-lg rounded-lg">
-                            Sign In
-                        </button>
+                        {
+                            user ?
+                                <button className="focus:outline-none">
+                                    <AiOutlineUser className="text-3xl"/>
+                                </button>
+                            :
+                            <a href="/account/login" className="btn btn-primary">
+                                Sign In
+                            </a>
+
+                        }
                     </div>
-                    {/* <div className="flex-grow flex items-center space-x-5 justify-around">
-                    <div className="flex items-center space-x-5">
-                        <Link href={"/"} className="text-sm font-bold capitalize">
-                            Home
-                        </Link>
-                        <Link href="/about" className="text-sm font-bold capitalize">
-                            About
-                        </Link>
-                        <Link href="/contact" className="text-sm font-bold capitalize">
-                            Contact
-                        </Link>
-                    </div>
-                    <div className='relative w-[220px]'>
-                        <input type="text" className='py-2 px-4 rounded-full w-full bg-white border-[1px] border-black focus:outline-none' />
-                        <FaSearch className='absolute top-2/4 right-4 transform translate-y-[-50%]'/>
-                    </div>
-                    <div className='flex items-center space-x-5'>
-                        <p className="text-sm font-bold">
-                            02 ITEMS
-                        </p>
-                        <AiOutlineShoppingCart className='text-xl'/>
-                    </div>
-                </div> */}
                 </div>
             </header>
         </>

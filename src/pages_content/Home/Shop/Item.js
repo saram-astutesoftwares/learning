@@ -43,9 +43,22 @@ const Item = ({ id, title, image, price, newItem, }) => {
         </p>
        </div>
     </a>
-    {/* <div className="rounded-lg flex items-center justify-center group-hover:translate-y-[-50%] translate-x-[-50%] translate-y-[100%] transition-all absolute h-24 w-10/12 bg-white top-full group-hover:top-2/4 left-2/4">
-      
-    </div> */}
+    <div className="rounded-lg py-5 flex flex-col items-center justify-center group-hover:translate-y-[-0%] translate-x-[-50%] translate-y-[100%] transition-all absolute w-10/12 bg-white top-full group-hover:top-2/4 left-2/4">
+          <p className="text-sm font-bold uppercase mb-2">
+            Quick Add
+          </p>
+          <div className="gap-2 grid grid-cols-3">
+            <div className="hover:bg-black hover:text-white hover:shadow-xl cursor-pointer select-none py-1 text-center px-3 rounded-lg border-2 border-black">
+              S
+            </div>
+            <div className="hover:bg-black hover:text-white hover:shadow-xl cursor-pointer select-none py-1 text-center px-3 rounded-lg border-2 border-black">
+              M
+            </div>
+            <div className="hover:bg-black hover:text-white hover:shadow-xl cursor-pointer select-none py-1 text-center px-3 rounded-lg border-2 border-black">
+              L
+            </div>
+          </div>
+    </div>
     </motion.div>
   )
 }

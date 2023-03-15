@@ -22,7 +22,7 @@ const Layout = ({children}) => {
     <div className={`min-h-screen w-full flex flex-col ${poppins.variable} font-sans`}>
         {/* <Header/> */}
         <Header2/>
-        <main className='flex-grow'>
+        <main className='pt-[79px] flex-grow'>
             <div className="pb-5">
                 {children}
             </div>
