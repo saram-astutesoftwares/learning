@@ -1,5 +1,4 @@
 import Header from '../Header'
-import Header2 from '../Header2'
 import Footer from '../Footer'
 import localFont from 'next/font/local'
 
@@ -20,8 +19,7 @@ const poppins = localFont({
 const Layout = ({children}) => {
   return (
     <div className={`min-h-screen w-full flex flex-col ${poppins.variable} font-sans`}>
-        {/* <Header/> */}
-        <Header2/>
+        <Header/>
         <main className='pt-[79px] flex-grow'>
             <div className="pb-5">
                 {children}
