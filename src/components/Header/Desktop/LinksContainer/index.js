@@ -5,7 +5,7 @@ const LinksContainer = () => {
 
   return (
     <>
-      <div className="flex space-x-5">
+      <div className="hidden lg:flex space-x-5">
         {
           links.map((data, index) => (
             <ParentLinks data={data} key={index}/>

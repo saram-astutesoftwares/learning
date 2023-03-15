@@ -11,7 +11,7 @@ const Desktop = () => {
         <>
             <LinksContainer/>
 
-            <div className="flex items-center space-x-5">
+            <div className="hidden lg:flex items-center space-x-5">
                 <button className="focus:outline-none">
                     <IoSearchOutline className="text-3xl" />
                 </button>
