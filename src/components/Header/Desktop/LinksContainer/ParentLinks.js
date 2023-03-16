@@ -25,15 +25,28 @@ const LinksContainer = ({data}) => {
                     }}
                     className="shadow-xl overflow-hidden absolute w-full -bottom-[2px] transform translate-y-full left-0"
                 >
-                    <div className="bg-white shadow-xl w-full">
-                        <div className="gap-5 py-12 grid grid-cols-4 max-w-[1600px] w-10/12 mx-auto">
-                            {
-                                data.categories.map((data, i) => (
-                                    <ChildLinks key={i} data={data} />
-                                ))
-                            }
+                        <div className="bg-white shadow-xl w-full">
+
+                    {
+                        data.nolinks ?
+                        <>
+                            <h2 className="py-12 text-center text-2xl font-bold">
+                                Coming soon
+                            </h2>
+                        </>
+                        :
+                        <>
+                            <div className="gap-5 py-12 grid grid-cols-4 max-w-[1600px] w-10/12 mx-auto">
+                                {
+                                    data.categories.map((data, i) => (
+                                        <ChildLinks key={i} data={data} />
+                                    ))
+                                }
+                            </div>
+                        </>
+                    }
                         </div>
-                    </div>
+
                 </motion.div>
             </nav>
         </>

@@ -48,3 +48,7 @@
     @apply text-red-500
   }
   /* inputs */
+
+  .images-round{
+    border-radius: 10%;
+  }

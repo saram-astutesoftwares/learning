@@ -2,6 +2,7 @@ import { IoSearchOutline } from "react-icons/io5"
 import { BsBag } from "react-icons/bs"
 import { BiMenu } from "react-icons/bi"
 import { useClientUser } from "@/hooks/useClientUser";
+import { AiOutlineHeart } from "react-icons/ai";
 
 const Mobile = ({setOpen}) => {
     const user = useClientUser();
@@ -14,6 +15,9 @@ const Mobile = ({setOpen}) => {
                 </button>
                 <button name="cart" className="focus:outline-none">
                     <BsBag className="text-3xl" />
+                </button>
+                <button name="cart" className="focus:outline-none">
+                    <AiOutlineHeart className="text-3xl" />
                 </button>
                 <button onClick={() => setOpen(true)} name="menu" className="focus:outline-none">
                     <BiMenu className="text-3xl" />

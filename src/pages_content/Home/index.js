@@ -1,9 +1,11 @@
 import React from 'react'
 // import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import Shop from "./Shop";
+// import 'swiper/css';
+// import SecondSlide from './Slides/SecondSlide';
 import FirstSlide from './Slides/FirstSlide';
-import SecondSlide from './Slides/SecondSlide';
+import Shop from "./Shop";
+import Categories from "./Categories";
+import Blog from "./Blog";
 
 const Home = ({ data, description, error, shop }) => {
     if (error) {
@@ -17,22 +19,10 @@ const Home = ({ data, description, error, shop }) => {
     }
     return (
         <>
-        <FirstSlide/>
-            {/* <Swiper
-                spaceBetween={0}
-                slidesPerView={1}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
-                className=""
-            >
-                <SwiperSlide className='min-h-[100vh]'>
-                    <FirstSlide/>
-                </SwiperSlide>
-                <SwiperSlide className='min-h-[100vh]'>
-                    <SecondSlide/>
-                </SwiperSlide>
-            </Swiper> */}
-        <Shop/>
+            <FirstSlide/>
+            <Shop/>
+            <Categories/>
+            <Blog/>
         </>
     )
 }

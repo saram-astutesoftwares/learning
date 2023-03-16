@@ -64,7 +64,7 @@ const FirstSlide = () => {
                 }}
                 transition={{ delay: 0.4}}
                 className='btn-shadow hover:bg-white hover:text-black transition-all border-2 border-black bg-black text-white py-3 px-5 text-lg rounded-lg flex items-center font-medium space-x-2'>
-                    <p>Browse Collection</p>
+                    <p>Dive Into Metaverse</p>
                     <BsArrowRight className='text-3xl'/>
                 </motion.button>
                 </div>

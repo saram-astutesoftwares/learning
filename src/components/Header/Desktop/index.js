@@ -1,6 +1,6 @@
 import { IoSearchOutline } from "react-icons/io5"
 import { BsBag } from "react-icons/bs"
-import { AiOutlineUser } from "react-icons/ai"
+import { AiFillHeart, AiOutlineHeart, AiOutlineUser } from "react-icons/ai"
 import { useClientUser } from "@/hooks/useClientUser";
 import LinksContainer from "./LinksContainer";
 
@@ -17,6 +17,9 @@ const Desktop = () => {
                 </button>
                 <button className="focus:outline-none">
                     <BsBag className="text-3xl" />
+                </button>
+                <button className="focus:outline-none">
+                    <AiOutlineHeart className="text-3xl" />
                 </button>
                 {
                     user ?

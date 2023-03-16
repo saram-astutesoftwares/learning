@@ -27,9 +27,14 @@ const LinksContainer = ({data}) => {
                     className="overflow-hidden"
                 >
                     {
-                        data.categories.map((data, i) => (
-                            <ChildLinks key={i} data={data} />
-                        ))
+                        data.nolinks ?
+                            <p className="text-sm font-bold">
+                                Coming Soon
+                            </p>
+                        :
+                            data.categories.map((data, i) => (
+                                <ChildLinks key={i} data={data} />
+                            ))
                     }
                 </motion.div>
             </nav>

@@ -6,7 +6,7 @@ const Shop = () => {
   return (
     <div className='mb-5 py-4 w-10/12 mx-auto max-w-[1600px] space-y-5'>
         <h2 className="inline-block text-2xl font-bold uppercase">
-            Menswear
+            Shop
             <div className="h-2 w-2/4 bg-primary rounded-lg">
 
             </div>
