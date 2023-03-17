@@ -18,7 +18,7 @@
 }
 .btn-white{
     z-index: 1;
-    @apply border-white text-white
+    @apply hover:bg-black hover:text-white border-white bg-white text-black
 }
 
 .btn-shadow{
@@ -51,4 +51,9 @@
 
   .images-round{
     border-radius: 10%;
+  }
+
+  .shadow-text{
+    -webkit-text-stroke: 4px white;
+    text-stroke: 4px white;
   }
