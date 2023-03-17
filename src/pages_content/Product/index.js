@@ -3,18 +3,17 @@ import React from 'react'
 import Size from './Size'
 import {BsBagPlus} from "react-icons/bs";
 import Holder from './Holder';
+import Images from './Images';
+import {data} from "./data";
 
 const Product = () => {
   return (
     <div className='mt-24 mx-auto w-10/12 max-w-[1600px]'>
         <div className="grid grid-cols-12 gap-5 relative">
-            <div className="col-span-7 space-y-5">
-                <Image height={1500} width={1500} alt="Product" className='w-full' src="/images/product-1.webp"/>
-                <div className="grid grid-cols-2 gap-5">
-                    <Image height={1500} width={1500} alt="Product" className='w-full' src="/images/product-2.webp"/>
-                    <Image height={1500} width={1500} alt="Product" className='w-full' src="/images/product-3.webp"/>
-                </div>
-            </div>
+            {/* LEFT IMAGE GRID */}
+            <Images data={data}/>
+            {/* LEFT IMAGE GRID */}
+            
             <div className="col-span-5 px-12 relative">
                 <div className='sticky top-24'>
                 <h1 className="text-3xl font-bold">
