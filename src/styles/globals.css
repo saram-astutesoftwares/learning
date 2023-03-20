@@ -64,3 +64,11 @@
   .swiper-pagination-bullet-active{
     @apply !bg-white
   }
+
+  .swiper-button-next:after, .swiper-button-prev:after{
+    @apply text-white
+  }
+
+  .react-mag img{
+    max-width: unset !important;
+  }

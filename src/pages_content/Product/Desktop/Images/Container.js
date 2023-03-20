@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react'
 import {motion} from "framer-motion";
 import { AiOutlineClose } from 'react-icons/ai';
-import ReactImageMagnify from "react-image-magnify";
+import {
+    SideBySideMagnifier,
+    MOUSE_ACTIVATION,
+    TOUCH_ACTIVATION
+  } from "react-image-magnifiers";
+  
+
 
 
 const Container = ({url, alt, setOpen}) => {
@@ -22,26 +28,20 @@ const Container = ({url, alt, setOpen}) => {
         exit={{
             opacity: 0
         }}
-        className={`z-[100] fixed top-0 left-0 right-0 bottom-0 bg-white`}
+        className={`z-[100] fixed top-0 left-0 right-0 bottom-0 bg-white overflow-y-auto overflow-x-hidden`}
     >
-        <div className="max-w-[1600px] w-10/12 mx-auto py-12">
+        <div className="max-w-[1600px] w-8/12 mx-auto py-12">
             <div className="flex justify-end">
                 <button onClick={() => setOpen(false)}>
                     <AiOutlineClose className='text-3xl'/>
                 </button>
             </div>
 
-            <div className="w-6/12 mx-auto">
-            <ReactImageMagnify {...{
-                smallImage: {
-                    alt: 'Wristwatch by Ted Baker London',
-                    isFluidWidth: true,
-                    src: "/images/product-1.webp"
-                },
-                largeImage: {
-                    src: "/images/product-1.webp",
-                }
-            }} />
+            <div className="w-10/12 mx-auto react-mag">
+            <SideBySideMagnifier
+            imageSrc={url}
+            alwaysInPlace={true}
+            />
             </div>
 
         </div>
