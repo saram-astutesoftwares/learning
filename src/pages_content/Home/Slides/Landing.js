@@ -63,6 +63,23 @@ const Landing = ({active}) => {
                     className="text-right md:text-left text-7xl md:text-[100px] font-bold uppercase md:absolute bottom-0 right-0 text-white">
                     Sale
                 </motion.h2>
+                <motion.h2
+                    initial={{
+                        x: "100%",
+                        opacity: 0,
+                        rotate: 90
+                    }}
+                    animate={{
+                        x: active ? "0%" : "100%",
+                        opacity: active ? 1 : 0
+                    }}
+                    transition={{
+                        delay:0.5,
+                        type: "spring", stiffness: 100
+                    }}
+                    className="text-right md:text-left md:text-xl tracking-[7px] font-bold uppercase absolute top-1/4 transform translate-y-[-50%] right-[-10%] md:right-0 text-white">
+                    UP TO 30% OFF
+                </motion.h2>
             </div>
         </MouseParallaxContainer>
 
