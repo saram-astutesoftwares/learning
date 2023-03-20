@@ -26,6 +26,7 @@
     "react-notifications-component": "^3.1.0",
     "react-parallax-button": "^1.0.4",
     "react-parallax-mouse": "^2.0.1",
+    "react-star-rating-component": "^1.4.1",
     "swiper": "^9.1.0",
     "yup": "^1.0.2"
   },

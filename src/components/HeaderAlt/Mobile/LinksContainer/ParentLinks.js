@@ -13,7 +13,7 @@ const LinksContainer = ({data}) => {
                     <Link href={"/"} className={`"}`}>
                         {data.title}
                     </Link>
-                    <button onClick={() => setOpen(!open)} name="expand menu" className="focus:outline-none">
+                    <button aria-label="Expand menu" onClick={() => setOpen(!open)} className="focus:outline-none">
                         <AiOutlineRight className={`transition-transform transform ${open ? "rotate-[90deg]" : "rotate-[0deg]"}`}/>
                     </button>
                 </div>

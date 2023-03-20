@@ -69,7 +69,7 @@ const Login = () => {
                                 />
 
                                 <div className="flex items-center mt-5">
-                                    <button type="submit" disabled={form.isSubmitting} className='w-full btn btn-primary'>
+                                    <button aria-label='Login' type="submit" disabled={form.isSubmitting} className='w-full btn btn-primary'>
                                         {
                                             form.isSubmitting ? 
                                             <BiLoaderAlt className="animate-spin text-3xl mx-auto"/>

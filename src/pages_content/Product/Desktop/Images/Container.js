@@ -32,7 +32,7 @@ const Container = ({url, alt, setOpen}) => {
     >
         <div className="max-w-[1600px] w-8/12 mx-auto py-12">
             <div className="flex justify-end">
-                <button onClick={() => setOpen(false)}>
+                <button aria-label='Close' onClick={() => setOpen(false)}>
                     <AiOutlineClose className='text-3xl'/>
                 </button>
             </div>

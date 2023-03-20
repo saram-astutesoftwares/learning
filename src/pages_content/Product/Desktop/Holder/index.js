@@ -6,7 +6,7 @@ const Holder = ({title, borderBottom, children}) => {
     const [open, setOpen] = useState(false)
     return (
         <>
-        <button onClick={() => setOpen(!open)} className={`py-3 px-4 w-full uppercase  flex items-center justify-between ${borderBottom ? "border-b-2" : ""} border-200`}>
+        <button aria-label='Expand' onClick={() => setOpen(!open)} className={`py-3 px-0 w-full uppercase  flex items-center justify-between ${borderBottom ? "border-b-2" : ""} border-200`}>
             <p className="text-lg font-semibold">
                 {title}
             </p>

@@ -10,16 +10,16 @@ const Mobile = ({setOpen}) => {
         <>
 
             <div className="flex lg:hidden items-center space-x-5">
-                <button name="search" className="focus:outline-none">
+                <button aria-label="Search" className="focus:outline-none">
                     <IoSearchOutline className="text-3xl" />
                 </button>
-                <button name="cart" className="focus:outline-none">
+                <button aria-label="Cart" className="focus:outline-none">
                     <BsBag className="text-3xl" />
                 </button>
-                <button name="cart" className="focus:outline-none">
+                <button aria-label="Wishlist" className="focus:outline-none">
                     <AiOutlineHeart className="text-3xl" />
                 </button>
-                <button onClick={() => setOpen(true)} name="menu" className="focus:outline-none">
+                <button aria-label="Menu" onClick={() => setOpen(true)} name="menu" className="focus:outline-none">
                     <BiMenu className="text-3xl" />
                 </button>
             </div>

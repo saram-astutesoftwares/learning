@@ -57,8 +57,8 @@ const Header = () => {
             <header className={`border-gray-300 z-10 fixed top-0 ${colored ? "lg:top-9" : "lg:top-0"} left-0 w-full flex-shirnk-0 px-4 transition-all ${colored ? "bg-white text-black" : "bg-transparent text-white"}`}>
                 <div className="max-w-[1600px] w-10/12 mx-auto flex-shrink-0 flex justify-between space-x-5">
                     <a href="/" className='text-2xl font-bold py-3'>
-                        <Image height={120} width={120} src="/images/logo-white.svg" className={`${colored ? "hidden" : "block"} w-24`} />
-                        <Image height={120} width={120} src="/images/logo.png" className={`${colored ? "block" : "hidden"} w-24`} />
+                        <Image height={120} width={120} src="/images/logo-white.svg" className={`${colored ? "hidden" : "block"} w-24`} alt={"Logo light"}/>
+                        <Image height={120} width={120} src="/images/logo.png" className={`${colored ? "block" : "hidden"} w-24`} alt={"Logo dark"} />
                     </a>
                     <Desktop colored={colored}/>
                     <Mobile setOpen={setOpen}/>

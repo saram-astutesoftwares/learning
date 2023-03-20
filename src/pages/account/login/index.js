@@ -9,6 +9,7 @@ export const getServerSideProps = (context) => {
   // deleteCookie("pro-wears-name_id", context)
   console.log("here are the cookies", getCookies(context))
   console.log("here are the cookies", getCookies(context))
+  console.log("here are the cookies", getCookies(context))
   
   return {
     props: {}

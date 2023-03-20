@@ -20,7 +20,7 @@ export default Size
 
 const Block = ({value}) => {
     return (
-        <button name="size" className="hover:bg-black hover:text-white py-2 px-4 text-center rounded-sm border-[1px] border-black font-bold">
+        <button aria-label='Size' className="hover:bg-black hover:text-white py-2 px-4 text-center rounded-sm border-[1px] border-black font-bold">
             {value}
         </button>
     )

@@ -12,18 +12,18 @@ const Desktop = () => {
             <LinksContainer/>
 
             <div className="hidden lg:flex items-center space-x-5">
-                <button className="focus:outline-none">
+                <button aria-label="Search" className="focus:outline-none">
                     <IoSearchOutline className="text-3xl" />
                 </button>
-                <button className="focus:outline-none">
+                <button aria-label="Cart" className="focus:outline-none">
                     <BsBag className="text-3xl" />
                 </button>
-                <button className="focus:outline-none">
+                <button aria-label="Wishlist" className="focus:outline-none">
                     <AiOutlineHeart className="text-3xl" />
                 </button>
                 {
                     user ?
-                        <button className="focus:outline-none">
+                        <button aria-label="User" className="focus:outline-none">
                             <AiOutlineUser className="text-3xl" />
                         </button>
                         :

@@ -17,7 +17,7 @@ const LinksContainer = ({open, setOpen}) => {
       <div className={`transition-transform bg-white z-[101] w-[320px] fixed top-0 bottom-0 right-0 transform ${open ? "translate-x-[0]" : "translate-x-full"} block lg:hidden`}>
           <div className="space-y-8 px-5 py-5 h-full w-full overflow-y-auto">
           <div className="flex justify-end">
-            <button name="Close Menu" onClick={() => setOpen(false)}  className="focus:outline-none">
+            <button aria-label="Close menu" onClick={() => setOpen(false)}  className="focus:outline-none">
               <AiOutlineClose className="text-2xl "/>
             </button>
           </div>

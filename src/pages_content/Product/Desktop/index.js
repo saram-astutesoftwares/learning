@@ -5,6 +5,7 @@ import {BsBagPlus} from "react-icons/bs";
 import Holder from './Holder';
 import Images from './Images';
 import {data} from "../data";
+import Reviews from './Reviews';
 
 const Product = () => {
   return (
@@ -40,7 +41,7 @@ const Product = () => {
                 <Size/>
 
                 <div className='flex flex-col items-center mb-5'>
-                    <button className='btn btn-primary !text-lg !rounded-full w-full flex items-center justify-center space-x-2'>
+                    <button aria-label="Cart" className='btn btn-primary !text-lg !rounded-full w-full flex items-center justify-center space-x-2'>
                         <BsBagPlus className='text-xl'/>
                         <p>
                             Add to cart
@@ -65,9 +66,24 @@ const Product = () => {
                     </p>
                 </Holder>
                 <Holder title="Reviews (148)">
-                    <p className="text-sm">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati id omnis ut quod blanditiis, voluptates magnam ad perspiciatis nam nesciunt molestias, sed, iure voluptate ducimus numquam molestiae error sint eveniet!
-                    </p>
+                    <div className="space-y-5">
+                    <Reviews 
+                        value={3}
+                        name={"John Doe"}
+                        timestamp={"12/01/2023"}
+                    />
+                    <Reviews 
+                        value={1}
+                        name={"Jane Doe"}
+                        timestamp={"25/01/2023"}
+                    />
+                    <Reviews 
+                        value={4}
+                        name={"Han Doe"}
+                        timestamp={"05/04/2022"}
+                    />
+                    </div>
+                    
                 </Holder>
                 </div>
 

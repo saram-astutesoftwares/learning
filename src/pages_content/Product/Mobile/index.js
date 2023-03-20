@@ -33,7 +33,7 @@ const Product = () => {
                 </div>
             </div>
             <div className='flex flex-col items-center mb-5'>
-                <button className='btn btn-primary !text-lg !rounded-full w-full flex items-center justify-center space-x-2'>
+                <button aria-label='Cart' className='btn btn-primary !text-lg !rounded-full w-full flex items-center justify-center space-x-2'>
                     <BsBagPlus className='text-xl' />
                     <p>
                         Add to cart

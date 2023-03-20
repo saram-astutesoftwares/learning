@@ -19,7 +19,7 @@ const FirstSlide = () => {
                     <p className="text-base mb-5 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, assumenda.
                     </p>
-                    <button className='btn btn-white flex items-center space-x-5'>
+                    <button aria-label='Dive into metaverse' className='btn btn-white flex items-center space-x-5'>
                         Dive into metaverse
                         <BsArrowRight className='text-xl' />
                     </button>
