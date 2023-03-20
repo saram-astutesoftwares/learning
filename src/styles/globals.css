@@ -57,3 +57,10 @@
     -webkit-text-stroke: 4px white;
     text-stroke: 4px white;
   }
+
+  .swiper-pagination-bullet{
+    @apply !h-6 !w-6 border-2 border-white !opacity-100 !bg-transparent
+  }
+  .swiper-pagination-bullet-active{
+    @apply !bg-white
+  }

@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
 import {motion} from "framer-motion";
 import { AiOutlineClose } from 'react-icons/ai';
+import ReactImageMagnify from "react-image-magnify";
 
-const Container = ({open, setOpen}) => {
+
+const Container = ({url, alt, setOpen}) => {
     useEffect(() => {
         document.body.style.overflowY = "hidden"
         return () => {
@@ -28,6 +30,20 @@ const Container = ({open, setOpen}) => {
                     <AiOutlineClose className='text-3xl'/>
                 </button>
             </div>
+
+            <div className="w-6/12 mx-auto">
+            <ReactImageMagnify {...{
+                smallImage: {
+                    alt: 'Wristwatch by Ted Baker London',
+                    isFluidWidth: true,
+                    src: "/images/product-1.webp"
+                },
+                largeImage: {
+                    src: "/images/product-1.webp",
+                }
+            }} />
+            </div>
+
         </div>
 
     </motion.div>
